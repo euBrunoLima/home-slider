@@ -118,6 +118,7 @@ header > nav > ul{
 
 .slider .list .item .content-info h2{
     font-size: 5rem;
+    line-height: 1;
     
 }
 
@@ -144,9 +145,11 @@ header > nav > ul{
 
 .slider .list .item.active h2{
     animation-delay: 1s;
+    margin: 8px 0px 10px 0px;
 }
 .item.active p:nth-child(3){
     animation-delay: 1.2s;
+    
 }
 
 /* .btns-slider{
@@ -230,19 +233,32 @@ header > nav > ul{
 
 }
 
-@media screen and (max-width: 678px){
-    /* .btns-slider{
-        left: 10%;
-        top: 53%;
-    } */
-
+@media screen and (max-width: 360px) {
+    .preview{
+        bottom: 4px;
+    }
+    .slider .list .item .content-info{
+        top: 13%;
+    }
+    .slider > .list > .item > .content-info :nth-child(3){
+        font-size: 0.8rem;
+    }
+    .slider > .list > .item > .content-info h2{
+        font-size: 40px
+    }
 }
-@media screen and (max-width: 375px) {
+
+@media screen and  (max-height: 800px){
+
+    .slider > .list > .item > .content-info h2{
+        font-size: 40px;
+    }
+    .slider > .list > .item > .content-info :nth-child(3){
+        font-size: 0.9rem;
+    }
+
     .preview{
         position: absolute;
         bottom: 10px;
-    }
-    .slider .list .item .content-info{
-        top: 15%;
     }
 }
