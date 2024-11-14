@@ -23,9 +23,9 @@ prev.onclick = function() {
     showSlider();
 };
 
-let refreshInterval = setInterval(() => {
-    next.click();
-}, 6000);
+// let refreshInterval = setInterval(() => {
+//     next.click();
+// }, 6000);
 
 function showSlider() {
     let itemActiveOld = document.querySelector('.slider .list .item.active');
@@ -39,7 +39,7 @@ function showSlider() {
     clearInterval(refreshInterval);
     refreshInterval = setInterval(() => {
         next.click();
-    }, 3000);
+    }, 10000);
 }
 
 preview.forEach((thumbnail, index) => {
