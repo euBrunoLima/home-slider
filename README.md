@@ -15,9 +15,8 @@ Um projeto pessoal criado para explorar minhas habilidades com HTML, CSS e JavaS
 * **Animação:** Transições suaves entre slides.
 
 ## Como Visualizar
-1. Clone este repositório: `git clone https://github.com/seu-usuario/slider-interativo.git`
-2. Abra o arquivo `index.html` em seu navegador.
 
+<a href="https://eubrunolima.github.io/home-slider/" target="_blank">Link para a página </a>
 ## Demonstração
 <div>
   <img src="https://github.com/user-attachments/assets/07ee8f53-da69-46a6-997c-e8bdd97ff9cd">
