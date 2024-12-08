@@ -45,7 +45,21 @@ header > nav > ul{
     font-weight: 600;
     transition: all .3s;
 }
-.btn-header:hover{
+.btn-get-in{
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #010101;
+    font-size: 15px !important;
+    font-weight: 600;
+    margin-top: 20px;
+    padding: 5px;
+    transition: all .3s;
+}
+
+
+
+.btn-header,.btn-get-in:hover{
     box-shadow: 0px 0px 10px #d5d5d5;
     
 
@@ -189,12 +203,12 @@ header > nav > ul{
     z-index: 1;
 
 }
-
+/* 
 .slider .list .item .content-info p:nth-child(1){
     text-transform: uppercase;
     letter-spacing: 10px;
     font-size: 1.4rem;
-}
+} */
 
 .slider .list .item .content-info h2{
     font-size: 4rem;
@@ -217,9 +231,10 @@ header > nav > ul{
     }
 }
 
-.slider .list .item .content-info p:nth-child(1),
+/* .slider .list .item .content-info p:nth-child(1), */
 .slider .list .item.active h2,
-.item.active p:nth-child(3){
+.item.active p:nth-child(2),
+.item.active a:nth-child(3){
     transform: translateX(30px);
     filter: blur(10px);
     opacity: 0;
@@ -227,14 +242,16 @@ header > nav > ul{
 }
 
 .slider .list .item.active h2{
-    animation-delay: 1.2s;
+    animation-delay: 1s;
     margin: 8px 0px 20px 0px;
 }
-.item.active p:nth-child(3){
-    animation-delay: 1.6s;
+.item.active p:nth-child(2){
+    animation-delay: 1.4s;
     
 }
-
+.item.active a:nth-child(3){
+    animation-delay: 1.8s;
+}
 /* .btns-slider{
     position: absolute;
     z-index: 100;
@@ -308,7 +325,7 @@ header > nav > ul{
     .slider .list .item .content-info  h2{
         font-size: 4rem;
     }
-    .slider > .list > .item > .content-info :nth-child(3){
+    .slider > .list > .item > .content-info p:nth-child(2){
         font-size: 1.1rem;
     }
 }
@@ -323,7 +340,8 @@ header > nav > ul{
 @media screen and (max-width: 450px){
     .preview{
         bottom: 10px;
-        left: -2%  /*Media tirada do OLHOMETRO*/
+        left: -2%;  /*Media tirada do OLHOMETRO*/
+        height: 230px
     }
     .slider .list .item .content-info{
         top: 18%;
@@ -339,7 +357,7 @@ header > nav > ul{
         font-size: 35px;
         margin: 8px 0px 10px 0px;
     }
-    .slider > .list > .item > .content-info :nth-child(3){
+    .slider > .list > .item > .content-info p:nth-child(2){
         font-size: 0.9rem;
     }
 
@@ -378,7 +396,7 @@ header > nav > ul{
     }
     
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 330px) {
 
     .preview {
         height: 188px;
@@ -396,7 +414,7 @@ header > nav > ul{
     }
 
     .preview .item .content-preview,
-    .slider .list .item .content-info p:nth-child(3){
+    .slider .list .item .content-info p:nth-child(2){
         visibility: hidden;
     }
     
